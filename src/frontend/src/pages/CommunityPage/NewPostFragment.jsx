@@ -25,6 +25,7 @@ const NewPostFragment = () => {
     const authorId = state?.user?.id;
 
     if (!authorId) {
+      alert("You need to be signed in to create a post.");
       return;
     }
 
